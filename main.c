@@ -8,6 +8,14 @@ struct alumno {
     float promedio;
 };
 
+void mostrarDatos(struct alumno dato) {
+    printf("Matricula: %d\n", dato.matricula);
+    printf("Nombre: %s\n", dato.nombre);
+    printf("Direccion: %s\n", dato.direccion);
+    printf("Carrera: %s\n", dato.carrera);
+    printf("Promedio: %.2f\n", dato.promedio);
+}
+
 int main(int argc, char const *argv[]) {
     struct alumno alumnos[100]; 
     int opc, n, i;
@@ -44,7 +52,11 @@ int main(int argc, char const *argv[]) {
                 break;
             }
             case 2: {
-
+                for (int i = 0; i < n; i++) {
+                    printf("Datos del alumno %d", i + 1);
+                    mostrarDatos(alumnos[i]);
+                }
+                break;
             }
             case 3: {
                 puts ("Saliendo\n");

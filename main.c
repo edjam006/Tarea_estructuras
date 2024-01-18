@@ -29,16 +29,16 @@ int main(int argc, char const *argv[]) {
                     printf("Ingrese matricula: ");
                     scanf("%d", &alumnos[i].matricula);
 
-                    printf("Ingrese nombre: \n");
+                    printf("Ingrese nombre: ");
                     scanf("%s", alumnos[i].nombre);
 
-                    printf("Ingrese direccion: \n");
+                    printf("Ingrese direccion: ");
                     scanf("%s", alumnos[i].direccion);
 
-                    printf("Ingrese carrera: \n");
+                    printf("Ingrese carrera: ");
                     scanf("%s", alumnos[i].carrera);
 
-                    printf("Ingrese promedio: \n");
+                    printf("Ingrese promedio: ");
                     scanf("%f", &alumnos[i].promedio);
                 }
                 break;
